@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Hello');
 });
 
-app.get('/health', (req, res,_next) => {
+app.get('/health', (req, res) => {
   res.json({ status: 'UP' });
 });
 
