@@ -9,9 +9,11 @@ module.exports = {
         .query(queryText, params)
         .then((res) => {
           resolve(res);
+          pool.end();
         })
         .catch((err) => {
           reject(err);
+          pool.end();
         });
     });
   },

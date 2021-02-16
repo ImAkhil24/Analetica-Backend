@@ -114,3 +114,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# docker vol
+data/
+.docker-compose.yaml
+
+#some local files which i want to ignore
+src/db/dev/dbConnection.js
