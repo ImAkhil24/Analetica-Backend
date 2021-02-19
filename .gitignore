@@ -117,7 +117,8 @@ dist
 
 # docker vol
 data/
-.docker-compose.yaml
 
 #some local files which i want to ignore
 .eslintignore
+dummyData.json
+sample.sql

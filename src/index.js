@@ -16,19 +16,11 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'UP' });
 });
 
-// app.get('/api/login', (req, res) => {
-//   // have to do the login stuff.
-//   // email aur password extract using body parser
-//   // datbase me srch krunga fir password hash krunga dono ko compare krunga
-//   // ek token generate krke response frontend ko bhej dunga wo token
-// });
-
 app.use('/api', usersRoute);
 
-// // /api/dashboard/(username)
-// // username ke correspondin sare data kaisa data?
-
-// // /api/
+// app.get('/api/login', (req, res) => {
+//   // have to do the login stuff.
+// });
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console

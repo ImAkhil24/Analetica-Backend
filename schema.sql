@@ -6,7 +6,7 @@ CREATE DATABASE website;
 
 CREATE TABLE IF NOT EXISTS users 
   (userId SERIAL PRIMARY KEY,
-  email VARCHAR(30),
+  email VARCHAR(30) UNIQUE,
   createdAt VARCHAR(30),
   password VARCHAR(64),
   displayName VARCHAR(64));
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS users
 CREATE TABLE IF NOT EXISTS website   
   (websiteId SERIAL PRIMARY KEY,
   websiteName VARCHAR(30),
-  baseUrl VARCHAR(30),
+  baseUrl VARCHAR(30) UNIQUE,
   userId SERIAL references users(userId));
 
 CREATE TABLE IF NOT EXISTS pages   
