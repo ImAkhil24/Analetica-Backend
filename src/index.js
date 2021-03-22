@@ -22,6 +22,7 @@ app.use('/api', usersRoute);
 //   // have to do the login stuff.
 // });
 
+ database-connection
 // new things
 
 // const PORT = process.env.port || 3000;
@@ -40,6 +41,8 @@ app.use('/api', usersRoute);
 // logged in means the browser have that cookie
 // cookie parser library parse the incoming cookie into a javascript object
 
+=======
+ main
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('listening to port 3000');
