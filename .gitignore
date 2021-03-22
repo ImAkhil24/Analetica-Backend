@@ -114,3 +114,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# docker vol
+data/
+
+#some local files which i want to ignore
+.eslintignore
+dummyData.json
+sample.sql
