@@ -18,16 +18,19 @@ app.get('/api/health', (req, res) => {
 
 app.use('/api', usersRoute);
 
+// app.use('/api', require('./routes/authRoute'));  not needed ig
+
 // app.get('/api/login', (req, res) => {
 //   // have to do the login stuff.
 // });
 
 // new things
 
-// const PORT = process.env.port || 3000;
-// console.log("the server is started on port : ${PORT}");
-// console.error(error);
+// const PORT = process.env.port || 3000; // done
+// console.log("the server is started on port : ${PORT}"); // done
+// console.error(error);  // error stream me bhejta hai
 // email aur password ko require krna hai
+// set the id of the user to be random (maybe not required)
 // app.use(express.json());
 // bcrypt algorihtm for hashing
 // for authentication there is a thing callsed jwt research about it
@@ -40,7 +43,9 @@ app.use('/api', usersRoute);
 // logged in means the browser have that cookie
 // cookie parser library parse the incoming cookie into a javascript object
 
-app.listen(3000, () => {
+const port = process.env.port || 3000;
+
+app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log('listening to port 3000');
+  console.log(`listening to port : ${port}`);
 });

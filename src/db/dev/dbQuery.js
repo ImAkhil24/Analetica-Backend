@@ -1,4 +1,5 @@
 // gain insights y this file is needed
+// because pool yha se aara hai
 
 const pool = require('./pool');
 

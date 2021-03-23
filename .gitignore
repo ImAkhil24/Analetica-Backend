@@ -122,3 +122,4 @@ data/
 .eslintignore
 dummyData.json
 sample.sql
+backup/
