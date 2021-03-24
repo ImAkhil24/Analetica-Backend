@@ -191,4 +191,13 @@ const userLogin = async (req, res) => {
   }
 };
 
-module.exports = { createUser, getUser, userLogin };
+const userLogout = async (req, res) => {
+  res
+    .cookie('token', '', {
+      httpOnly: true,
+      expires: new Date(0),
+    })
+    .send();
+};
+
+module.exports = { createUser, getUser, userLogin, userLogout };
